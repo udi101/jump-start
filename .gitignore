@@ -2,6 +2,7 @@
 node_modules
 npm-debug.log
 sandboxes.ts
+package-lock.json
 
 # Code Editor Settings
 .idea
