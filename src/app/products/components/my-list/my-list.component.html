@@ -1,0 +1,9 @@
+<p>my-list works!</p>
+
+@let myList = productsService.myList();
+
+<div>My List</div>
+
+@for (product of myList; track product.id) {
+<div>{{ product.title }}</div>
+}

@@ -1,0 +1,12 @@
+.links {
+  display: flex;
+  gap: 12px;
+
+  .vertical-divider {
+    width: 2px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .link {
+    color: #205090;
+  }
+}

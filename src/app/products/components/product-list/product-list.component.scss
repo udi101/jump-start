@@ -1,0 +1,19 @@
+.row:first-child {
+  color: red !important;
+}
+.row {
+  display: flex;
+  gap: 24px;
+  .id {
+    width: 30px;
+  }
+  .title {
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .price {
+    width: 100px;
+  }
+}

@@ -1,0 +1,18 @@
+<p><input type="text" (input)="changeText($event)" /></p>
+
+<div class="row">
+  <div class="id">Id</div>
+  <div class="title">Title</div>
+  <div class="price">Price</div>
+</div>
+@if(productsResource.isLoading()) {
+    Loading...
+}
+@for (product of productsResource.value(); track product.id) {
+<div class="row">
+  <a class="id" routerLink="/product-details/{{product.id}}">{{ product.id }}</a>
+  <div class="title">{{ product.title }}</div>
+  <div class="price">{{ product.price }}</div>
+  <div class="add" (click)="addToMyList(product)">Add to my list</div>
+</div>
+}
